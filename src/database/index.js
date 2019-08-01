@@ -1,8 +1,8 @@
 import Sequelize from 'sequelize';
 
-import databaseConfig from '../config/database';
-
 import User from '../app/models/User';
+
+import databaseConfig from '../config/database';
 
 const models = [User];
 
@@ -18,4 +18,4 @@ class Database {
   }
 }
 
-export default Database;
+export default new Database();
